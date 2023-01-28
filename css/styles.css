@@ -16,7 +16,7 @@
     --text-color:#fff;
     --second-color:#ccc;
     --main-color:#05b4ff;
-    --big-font:5rem;
+    --big-font:4.6rem;
     --h2-font:3rem;
     --p-font:1.1rem;
 }
@@ -63,7 +63,9 @@ span{
 .navBar a:hover{
     color: var(--main-color);
 }
-
+.navBar a.active{
+color: var(--main-color);
+}
 #menu-icon{
     font-size: 35px;
     color: var(--text-color);
@@ -80,10 +82,68 @@ section{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(/img/background.png);
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.4)), url(/img/background2.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+
+.slide{
+    margin-bottom: 20px;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+.two{
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
+}
+.home-text h3{
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.home-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+.button{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display:inline-block;
+    padding: 12px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+.btn:hover{transform: scale(0.9);}
