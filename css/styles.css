@@ -15,7 +15,7 @@
     --second-bg-color:#202020;
     --text-color:#fff;
     --second-color:#ccc;
-    --main-color:#05b4ff;
+    --main-color:#0569ff;
     --big-font:4.6rem;
     --h2-font:3rem;
     --p-font:1.1rem;
@@ -147,3 +147,104 @@ section{
     transition: all .45s ease;
 }
 .btn:hover{transform: scale(0.9);}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img{
+    max-height: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-style: oblique;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+.projects-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), #00a6ff);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.layer h5{
+    font: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.layer p{
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.layer i{
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 100%;
+}
+.content{
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
