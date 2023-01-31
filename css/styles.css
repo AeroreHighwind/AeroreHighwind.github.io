@@ -9,10 +9,12 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-
+p{
+    cursor: default;
+}
 :root{
-    --bg-color: #2a2a2a;
-    --second-bg-color:#202020;
+    --bg-color: #0a0a0f;
+    --second-bg-color:#16161d;
     --text-color:#fff;
     --second-color:#ccc;
     --main-color:#0569ff;
@@ -21,6 +23,16 @@
     --p-font:1.1rem;
 }
 
+/*:root{
+    --bg-color: #2a2a2a;
+    --second-bg-color:#202020;
+    --text-color:#fff;
+    --second-color:#ccc;
+    --main-color:#0569ff;
+    --big-font:4.6rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}*/
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -66,6 +78,10 @@ span{
 .navBar a.active{
 color: var(--main-color);
 }
+.media{
+    display: flex;
+}
+
 #menu-icon{
     font-size: 35px;
     color: var(--text-color);
@@ -148,6 +164,15 @@ section{
 }
 .btn:hover{transform: scale(0.9);}
 
+.media-btn{
+    display:inline-block;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 50px;
+    color: var(--second-color);
+    background: var(--main-color);
+    border-radius: 10%;
+}
 .about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -220,7 +245,7 @@ section{
 .layer p{
     color: var(--second-color);
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 .layer i{
     color: var(--main-color);
@@ -247,4 +272,111 @@ section{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2.5rem;
+}
+
+
+.academic-info h2{margin-bottom: 2rem;}
+.qualification-title{
+    margin-bottom: 2rem;
+}
+.academic-content-grid{
+    grid-template-columns: repeat(2,340px);
+    column-gap: 3rem;
+    display: grid;
+    justify-content: center;
+}
+
+.timeline-item{
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    cursor: default;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    left: .48rem;
+    top: 0;
+    height: 100%;
+    background-color: var(--main-color);
+}
+
+.circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    background-color: var(--main-color);
+    transition: .3s;
+}
+
+.timeline-item:hover .circle-dot{
+    background-color: var(--bg-color);
+}
+
+
+
+@media(max-width:1100px){
+    :root{
+        --big-font:4rem;
+        --h2-font:2.5rem;
+        --p-font:1rem;
+        transition: .1s;
+    }
+    .home-text h3{
+        font-size: 2.5rem;
+    }
+    .home{
+        height: 87vh;
+    }
+}
+@media(max-width:920){
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:480px){
+    #menu-icon{
+        display: block;
+    }
+    .navBar{
+        position: absolute;
+        top: 0px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .navBar a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: .45s ease;
+        color: var(--text-color);
+    }
+    .navBar a:hover{
+        color: var(--main-color)
+    }
+    .navBar a.active{
+        color: var(--text-color);
+    }
+    .navBar.open{
+        top: 100%;
+    }
 }
