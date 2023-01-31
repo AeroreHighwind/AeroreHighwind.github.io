@@ -12,6 +12,7 @@
 p{
     cursor: default;
 }
+
 :root{
     --bg-color: #0a0a0f;
     --second-bg-color:#16161d;
@@ -93,6 +94,11 @@ color: var(--main-color);
 
 section{
     padding: 160px 15% 120px;
+}
+
+.main-text{
+    text-align: center;
+    font-size: 24px;
 }
 .home{
     position: relative;
