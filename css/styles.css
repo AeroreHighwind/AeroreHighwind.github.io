@@ -9,10 +9,18 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 p{
     cursor: default;
 }
-
+.grid{
+    display: grid;
+}
+.flex{
+    display: flex;
+}
 :root{
     --bg-color: #0a0a0f;
     --second-bg-color:#16161d;
@@ -99,6 +107,7 @@ section{
 .main-text{
     text-align: center;
     font-size: 24px;
+    margin-bottom: 3rem;
 }
 .home{
     position: relative;
@@ -280,8 +289,8 @@ section{
     gap: 2.5rem;
 }
 
-
-.academic-info h2{margin-bottom: 2rem;}
+/*Qualification section*/
+.qualification h2{margin-bottom: 2.5rem;}
 .qualification-title{
     margin-bottom: 2rem;
 }
@@ -327,7 +336,48 @@ section{
     background-color: var(--bg-color);
 }
 
+/*Skills section*/
 
+.skills-container{
+    display: grid;
+    grid-template-columns: 360px 320px;
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+
+.skills-titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.skills-header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skills-header:not(:last-child){
+    margin-bottom: 2.5rem;
+}
+.skills-list{
+    row-gap: 1.8rem;
+}
+
+.skills-bar,
+.skills-bar{
+    height: 5px;
+    border-radius: .25rem;
+}
+.skills-bar{
+    background-color: var(--second-bg-color);
+}
+
+.skills-percentage{
+    display: block;
+    background-color: var(--main-color);
+}
 
 @media(max-width:1100px){
     :root{
