@@ -361,12 +361,24 @@ section{
 .skills-header:not(:last-child){
     margin-bottom: 2.5rem;
 }
+.skills-icon,
+.skills-arrow{
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+.skills-icon{
+    margin-right:0.75rem;
+}
+.skills-arrow{
+    margin-left:auto;
+}
+
 .skills-list{
     row-gap: 1.8rem;
 }
 
 .skills-bar,
-.skills-bar{
+.skills-percentage{
     height: 5px;
     border-radius: .25rem;
 }
@@ -377,6 +389,7 @@ section{
 .skills-percentage{
     display: block;
     background-color: var(--main-color);
+    line-height: 0.4;
 }
 
 @media(max-width:1100px){

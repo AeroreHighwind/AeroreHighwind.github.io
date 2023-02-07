@@ -8,8 +8,10 @@
     <title>GastónGallegosPortfolio</title>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
 <body>
@@ -37,7 +39,7 @@
                 In temporibus, obcaecati modi quas officia perspiciatis, unde praesentium odit cupiditate sapiente,
                 facere maiores. Amet!</p>
             <div class="button">
-                <a href="#" class="btn">About me</a>
+                <a href="#" class="btn">About me </a>
             </div>
             <ul class="media">
                 <li><a href="https://www.linkedin.com/in/cesar-gaston-gallegos/" class="media-btn"><i class='bx bxl-linkedin'></i></a></li>
@@ -52,7 +54,7 @@
     <!-- About section -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="img/about.jpg">
+            <img src="img/about.png">
         </div>
         <div class="about-text">
             <h2>About <span>Me</span></h2>
@@ -65,7 +67,7 @@
                 Amet illo sint consequuntur earum a laudantium vel accusamus, minus ea autem nesciunt deserunt tempore
                 expedita.
             </p>
-            <a href="#" class="btn">More About</a>
+            <a href="doc\Gaston Gallegos.pdf" download class="btn">Download CV </a>
         </div>
     </section>
         <!-- Projects section -->
@@ -196,22 +198,35 @@
         <div class="skills-tabs">
 
             <div class="skills-header">
-                <i class="uil uil-brackets-curly skills__icon"></i>
+                <i class="uil uil-brackets-curly skills-icon"></i>
                 <div>
                     <h1 class="skills-title">FrontEnd development</h1>
-                    <span class="skills_subtitle">Angular</span>
-                    <i class="uil uil-angle-down skills__arrow"></i>
+                    <span class="skills_subtitle"> Angular</span>
+                    
                 </div>
+                <i class="uil uil-angle-down skills-arrow"></i>
             </div>
             <div class="skills-header">
-                <i class="uil uil-brackets-curly skills__icon"></i>
+                <i class="uil uil-server-connection skills-icon"></i>
 
                 <div>
                     <h1 class="skills-title">Back-End development</h1>
                     <span class="skills_subtitle">Spring Boot</span>
 
-                    <i class="uil uil-angle-down skills__arrow"></i>
+                    
                 </div>
+                <i class="uil uil-angle-down skills-arrow"></i>
+            </div>
+            <div class="skills-header">
+                <i class="uil uil-comments-alt skills-icon"></i>
+
+                <div>
+                    <h1 class="skills-title">English</h1>
+                    <span class="skills_subtitle"><a href="doc\EF SET Certificate.pdf" download><span>C2 Proficient(Download certificate)</span></a></span>
+
+                    
+                </div>
+                <i class="uil uil-angle-down skills-arrow"></i>
             </div>
         </div>
            
@@ -222,29 +237,77 @@
                 <div class="skills-list grid">
                     <div class="skills-data">
                         <div class="skills-titles">
-                            <h3 class="skills-name">HTML</h3>
-                            <span class="skills-number">90%</span>
+                            <h3 class="skills-name"><i class="uil uil-html5"></i> HTML</h3>
+                            <span class="skills-number">95%</span>
                         </div>
                         <div class="skills-bar">
-                            <span class="skills-percentage" style="width: 90%;"></span>
+                            <span class="skills-percentage" style="width: 95%;"></span>
                         </div>
+                    </div>
                     <div class="skills-data">
                         <div class="skills-titles">
-                            <h3 class="skills-name">CSS</h3>
+                            <h3 class="skills-name"><box-icon name='css3' type='logo' color="white"></box-icon> CSS</h3>
                             <span class="skills-number">75%</span>
                         </div>
                         <div class="skills-bar">
                             <span class="skills-percentage" style="width: 75%;"></span>
                         </div>
+                    </div>
                     <div class="skills-data">
                         <div class="skills-titles">
-                            <h3 class="skills-name">JS</h3>
+                            <h3 class="skills-name"><i class="uil uil-java-script"></i> JS</h3>
                             <span class="skills-number">70%</span>
                         </div>
                         <div class="skills-bar">
                             <span class="skills-percentage" style="width: 70%;"></span>
                         </div>
                     </div>
+                    <div class="skills-data">
+                        <div class="skills-titles">
+                            <h3 class="skills-name"> <box-icon type='logo' name='angular' color="white"></box-icon> Angular</h3>
+                            <span class="skills-number">75%</span>
+                        </div>
+                        <div class="skills-bar">
+                            <span class="skills-percentage" style="width: 75%;"></span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-titles">
+                            <h3 class="skills-name"><box-icon name='spring-boot' type='logo' color="white"></box-icon> SpringBoot</h3>
+                            <span class="skills-number">70%</span>
+                        </div>
+                        <div class="skills-bar">
+                            <span class="skills-percentage" style="width: 70%;"></span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-titles">
+                            <h3 class="skills-name"><box-icon name='java' type='logo' color="white"></box-icon> Java</h3>
+                            <span class="skills-number">75%</span>
+                        </div>
+                        <div class="skills-bar">
+                            <span class="skills-percentage" style="width: 75%;"></span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-titles">
+                            <h3 class="skills-name"><i class="uil uil-database"></i> SQL</h3>
+                            <span class="skills-number">85%</span>
+                        </div>
+                        <div class="skills-bar">
+                            <span class="skills-percentage" style="width: 85%;"></span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-titles">
+                            <h3 class="skills-name">Postman</h3>
+                            <span class="skills-number">90%</span>
+                        </div>
+                        <div class="skills-bar">
+                            <span class="skills-percentage" style="width: 90%;"></span>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
