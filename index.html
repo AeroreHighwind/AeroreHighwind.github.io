@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
+
     <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script defer src="js\script.js"></script>
 </head>
@@ -18,13 +18,15 @@
 <body>
     <header>
         <a href="#" class="logo">Develo<span>pe</span>r.. </a>
-        <ul class="navBar">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#qualification">Knowledge</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <nav>
+            <ul class="navBar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects" >Projects</a></li>
+                <li><a href="#qualification" >Knowledge</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
     <!-- Home section -->
@@ -43,7 +45,8 @@
                 <a href="#" class="btn">About me </a>
             </div>
             <ul class="media">
-                <li><a href="https://www.linkedin.com/in/cesar-gaston-gallegos/" class="media-btn"><i class='bx bxl-linkedin'></i></a></li>
+                <li><a href="https://www.linkedin.com/in/cesar-gaston-gallegos/" class="media-btn"><i
+                            class='bx bxl-linkedin'></i></a></li>
                 <li><a href="https://github.com/AeroreHighwind" class="media-btn"><i class='bx bxl-github'></i></a></li>
                 <li><a href="#" class="media-btn"><i class='bx bxl-discord'></i></a></li>
             </ul>
@@ -62,321 +65,343 @@
             <h4>Website Developer!</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint impedit laboriosam quasi obcaecati quos.
                 Amet illo sint consequuntur earum a laudantium vel accusamus, minus ea autem nesciunt deserunt tempore
-                expedita.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint impedit laboriosam quasi obcaecati quos.
+                expedita.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint impedit laboriosam quasi
+                obcaecati quos.
                 Amet illo sint consequuntur earum a laudantium vel accusamus, minus ea autem nesciunt deserunt tempore
-                expedita.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint impedit laboriosam quasi obcaecati quos.
+                expedita.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint impedit laboriosam quasi
+                obcaecati quos.
                 Amet illo sint consequuntur earum a laudantium vel accusamus, minus ea autem nesciunt deserunt tempore
                 expedita.
             </p>
             <a href="doc\Gaston Gallegos.pdf" download class="btn">Download CV </a>
         </div>
     </section>
-        <!-- Projects section -->
-<section class="projects" id="projects">
-    <div class="main-text">
-        <h2><span>My </span>Projects</h2>
-    </div>
-    <div class="projects-content">
-        <div class="row">
-            <img src="img/project1.jpg">
-            <div class="layer">
-                <h5>Argentina Programa Portfolio</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repellendus quod molestiae eum, nisi vel quas? Ullam et adipisci, pariatur quaerat culpa sed. Voluptate cum officia eaque minima, placeat vero.</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <div class="main-text">
+            <h2><span>My </span>Projects</h2>
         </div>
-        <div class="row">
-            <img src="img/project2.jpg">
-            <div class="layer">
-                <h5>Store application</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repellendus quod molestiae eum, nisi vel quas? Ullam et adipisci, pariatur quaerat culpa sed. Voluptate cum officia eaque minima, placeat vero.</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-        <div class="row">
-            <img src="img/project2.jpg">
-            <div class="layer">
-                <h5>Visual Design</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repellendus quod molestiae eum, nisi vel quas? Ullam et adipisci, pariatur quaerat culpa sed. Voluptate cum officia eaque minima, placeat vero.</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-        <div class="row">
-            <img src="img/project2.jpg">
-            <div class="layer">
-                <h5>Visual Design</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repellendus quod molestiae eum, nisi vel quas? Ullam et adipisci, pariatur quaerat culpa sed. Voluptate cum officia eaque minima, placeat vero.</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Qualification section -->
-<section class="qualification" id="qualification">
-
-    <div class="main-text">
-        <h2>My <span>Knowledge</span></h2>
-    </div>
-<div class="academic-content-grid">
-    <div class="education">
-        <h3 class="qualification-title">
-             Education
-        </h3>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="institution-name">Instituto Espiritu Santo</h3>
-                <p class="timeline-text">Bachelor of Economics and Business Administration </p>
-                <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
-                2012-2018</span>
-            </div>
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="institution-name">Inteligencia Educativa</h3>
-                <p class="timeline-text">Video game programming (Unity)</p>
-                <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
-                2019/2021</span>
-            </div>
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="institution-name">INTI</h3>
-                <p class="timeline-text">Full-Stack web programming </p>
-                <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
-                2019-2022</span>
-            </div>
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="institution-name">UNC</h3>
-                <p class="timeline-text">Computer Engineering </p>
-                <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
-                2019 - present</span>
-                
-            </div>
-        </div>
-    </div>
-    <div class="experience">
-        <h3 class="qualification-title">
-             Experience
-        </h3>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="institution-name">Freelance PC service</h3>
-                <p class="timeline-text">Software and hardware maintence.</p>
-                <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
-                2018 - present</span>
-            </div>
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="institution-name">Argentina Programa</h3>
-                <p class="timeline-text">Portfolio full-stack development</p>
-                <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
-                2019/2021</span>
-            </div>
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="institution-name">Freelance web programmer</h3>
-                <p class="timeline-text">Full-Stack web programming </p>
-                <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
-                2022 - present</span>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-
-
-<!-- Skills section -->
-<section class="skills" id="skills">
-    <div class="main-text">
-        <h2>My <span>skills</span></h2>
-    </div>
-    <div class="skills-container container grid">
-
-        <div class="skills-tabs">
-
-            <div class="skills-header">
-                <i class="uil uil-brackets-curly skills-icon"></i>
-                <div>
-                    <h1 class="skills-title">FrontEnd development</h1>
-                    <span class="skills_subtitle"> Angular</span>
-                    
+        <div class="projects-content">
+            <div class="row">
+                <img src="img/project1.jpg">
+                <div class="layer">
+                    <h5>Argentina Programa Portfolio</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repellendus quod molestiae
+                        eum, nisi vel quas? Ullam et adipisci, pariatur quaerat culpa sed. Voluptate cum officia eaque
+                        minima, placeat vero.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
-                <i class="uil uil-angle-down skills-arrow"></i>
             </div>
-            <div class="skills-header">
-                <i class="uil uil-server-connection skills-icon"></i>
-
-                <div>
-                    <h1 class="skills-title">Back-End development</h1>
-                    <span class="skills_subtitle">Spring Boot</span>
-
-                    
+            <div class="row">
+                <img src="img/project2.jpg">
+                <div class="layer">
+                    <h5>Store application</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repellendus quod molestiae
+                        eum, nisi vel quas? Ullam et adipisci, pariatur quaerat culpa sed. Voluptate cum officia eaque
+                        minima, placeat vero.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
-                <i class="uil uil-angle-down skills-arrow"></i>
             </div>
-            <div class="skills-header">
-                <i class="uil uil-comments-alt skills-icon"></i>
-
-                <div>
-                    <h1 class="skills-title">English</h1>
-                    <span class="skills_subtitle"><a href="doc\EF SET Certificate.pdf" download><span>C2 Proficient(Download certificate)</span></a></span>
-
-                    
+            <div class="row">
+                <img src="img/project2.jpg">
+                <div class="layer">
+                    <h5>Visual Design</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repellendus quod molestiae
+                        eum, nisi vel quas? Ullam et adipisci, pariatur quaerat culpa sed. Voluptate cum officia eaque
+                        minima, placeat vero.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
-                <i class="uil uil-angle-down skills-arrow"></i>
+            </div>
+            <div class="row">
+                <img src="img/project2.jpg">
+                <div class="layer">
+                    <h5>Visual Design</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repellendus quod molestiae
+                        eum, nisi vel quas? Ullam et adipisci, pariatur quaerat culpa sed. Voluptate cum officia eaque
+                        minima, placeat vero.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
             </div>
         </div>
-           
-        
+    </section>
 
-        <div class="skills-content">
-            <div class="skills-group">
-                <div class="skills-list grid">
-                    <div class="skills-data">
-                        <div class="skills-titles">
-                            <h3 class="skills-name"><i class="uil uil-html5"></i> HTML</h3>
-                            <span class="skills-number">95%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" style="width: 95%;"></span>
-                        </div>
+    <!-- Qualification section -->
+    <section class="qualification" id="qualification">
+
+        <div class="main-text">
+            <h2>My <span>Knowledge</span></h2>
+        </div>
+        <div class="academic-content-grid">
+            <div class="education">
+                <h3 class="qualification-title">
+                    Education
+                </h3>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="institution-name">Instituto Espiritu Santo</h3>
+                        <p class="timeline-text">Bachelor of Economics and Business Administration </p>
+                        <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
+                            2012-2018</span>
                     </div>
-                    <div class="skills-data">
-                        <div class="skills-titles">
-                            <h3 class="skills-name"><box-icon name='css3' type='logo' color="white"></box-icon> CSS</h3>
-                            <span class="skills-number">75%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" style="width: 75%;"></span>
-                        </div>
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="institution-name">Inteligencia Educativa</h3>
+                        <p class="timeline-text">Video game programming (Unity)</p>
+                        <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
+                            2019/2021</span>
                     </div>
-                    <div class="skills-data">
-                        <div class="skills-titles">
-                            <h3 class="skills-name"><i class="uil uil-java-script"></i> JS</h3>
-                            <span class="skills-number">70%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" style="width: 70%;"></span>
-                        </div>
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="institution-name">INTI</h3>
+                        <p class="timeline-text">Full-Stack web programming </p>
+                        <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
+                            2019-2022</span>
                     </div>
-                    <div class="skills-data">
-                        <div class="skills-titles">
-                            <h3 class="skills-name"> <box-icon type='logo' name='angular' color="white"></box-icon> Angular</h3>
-                            <span class="skills-number">75%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" style="width: 75%;"></span>
-                        </div>
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="institution-name">UNC</h3>
+                        <p class="timeline-text">Computer Engineering </p>
+                        <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
+                            2019 - present</span>
+
                     </div>
-                    <div class="skills-data">
-                        <div class="skills-titles">
-                            <h3 class="skills-name"><box-icon name='spring-boot' type='logo' color="white"></box-icon> SpringBoot</h3>
-                            <span class="skills-number">70%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" style="width: 70%;"></span>
-                        </div>
+                </div>
+            </div>
+            <div class="experience">
+                <h3 class="qualification-title">
+                    Experience
+                </h3>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="institution-name">Freelance PC service</h3>
+                        <p class="timeline-text">Software and hardware maintence.</p>
+                        <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
+                            2018 - present</span>
                     </div>
-                    <div class="skills-data">
-                        <div class="skills-titles">
-                            <h3 class="skills-name"><box-icon name='java' type='logo' color="white"></box-icon> Java</h3>
-                            <span class="skills-number">75%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" style="width: 75%;"></span>
-                        </div>
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="institution-name">Argentina Programa</h3>
+                        <p class="timeline-text">Portfolio full-stack development</p>
+                        <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
+                            2019/2021</span>
                     </div>
-                    <div class="skills-data">
-                        <div class="skills-titles">
-                            <h3 class="skills-name"><i class="uil uil-database"></i> SQL</h3>
-                            <span class="skills-number">85%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" style="width: 85%;"></span>
-                        </div>
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="institution-name">Freelance web programmer</h3>
+                        <p class="timeline-text">Full-Stack web programming </p>
+                        <span class="timelime-date"><i class="uil uil-calendar-alt"></i>
+                            2022 - present</span>
                     </div>
-                    <div class="skills-data">
-                        <div class="skills-titles">
-                            <h3 class="skills-name">Postman</h3>
-                            <span class="skills-number">90%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" style="width: 90%;"></span>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact section -->
-<section class="contact" id="contact">
-    <h2>Contact <span>Me</span></h2>
 
-    <div class="contact-container grid">
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-card">
-                    <i class="uil uil-envelope contact-card-icon"></i>
-                    <h3 class="contact-card-title">Email</h3>
-                    <span class="contact-card-data">gaston52343@gmail.com</span>
-                    <span class="contact-button">
-                        Write me <i class="uil uil-arrow-right contact-button-icon"></i>
-                    </span>
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <div class="main-text">
+            <h2>My <span>skills</span></h2>
+        </div>
+        <div class="skills-container container grid">
+
+            <div class="skills-tabs">
+
+                <div class="skills-header">
+                    <i class="uil uil-brackets-curly skills-icon"></i>
+                    <div>
+                        <h1 class="skills-title">FrontEnd development</h1>
+                        <span class="skills_subtitle"> Angular</span>
+
+                    </div>
+                    <i class="uil uil-angle-down skills-arrow"></i>
                 </div>
-                <div class="contact-card">
-                    <i class="uil uil-whatsapp contact-card-icon"></i>
-                    <h3 class="contact-card-title">Whatsapp</h3>
-                    <span class="contact-card-data">+543512041336</span>
-                    <span class="contact-button">
-                        Write me <i class="uil uil-arrow-right contact-button-icon"></i>
-                    </span>
+                <div class="skills-header">
+                    <i class="uil uil-server-connection skills-icon"></i>
+
+                    <div>
+                        <h1 class="skills-title">Back-End development</h1>
+                        <span class="skills_subtitle">Spring Boot</span>
+
+
+                    </div>
+                    <i class="uil uil-angle-down skills-arrow"></i>
                 </div>
-                <div class="contact-card">
-                    <i class="uil uil-facebook-messenger-alt contact-button-icon"></i>
-                    <h3 class="contact-card-title">Messenger</h3>
-                    <span class="contact-card-data">gaston52343@gmail.com</span>
-                    <span class="contact-button">
-                        Write me <i class="uil uil-arrow-right contact-button-icon"></i>
-                    </span>
+                <div class="skills-header">
+                    <i class="uil uil-comments-alt skills-icon"></i>
+
+                    <div>
+                        <h1 class="skills-title">English</h1>
+                        <span class="skills_subtitle"><a href="doc\EF SET Certificate.pdf" download><span>C2
+                                    Proficient(Download certificate)</span></a></span>
+
+
+                    </div>
+                    <i class="uil uil-angle-down skills-arrow"></i>
+                </div>
+            </div>
+
+
+
+            <div class="skills-content">
+                <div class="skills-group">
+                    <div class="skills-list grid">
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name"><i class="uil uil-html5"></i> HTML</h3>
+                                <span class="skills-number">95%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 95%;"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">
+                                    <box-icon name='css3' type='logo' color="white"></box-icon> CSS
+                                </h3>
+                                <span class="skills-number">75%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 75%;"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name"><i class="uil uil-java-script"></i> JS</h3>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 70%;"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">
+                                    <box-icon type='logo' name='angular' color="white"></box-icon> Angular
+                                </h3>
+                                <span class="skills-number">75%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 75%;"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">
+                                    <box-icon name='spring-boot' type='logo' color="white"></box-icon> SpringBoot
+                                </h3>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 70%;"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">
+                                    <box-icon name='java' type='logo' color="white"></box-icon> Java
+                                </h3>
+                                <span class="skills-number">75%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 75%;"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name"><i class="uil uil-database"></i> SQL</h3>
+                                <span class="skills-number">85%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 85%;"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Postman</h3>
+                                <span class="skills-number">90%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 90%;"></span>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="contact-content">
-            <form action="" class="contact-form">
-                <div class="input-container">
-                    <input type="text" class="input">
-                    <label for="">Username</label>
-                    <span>Username</span>
-                </div>
-                <div class="input-container">
-                    <input type="email" class="input">
-                    <label for="">Email</label>
-                    <span>Email</span>
-                </div>
-                <div class="input-container">
-                    <input type="tel" class="input">
-                    <label for="">Phone</label>
-                    <span>phone</span>
-                </div>
-                <div class="input-container textarea">
-                    <textarea name="" id=""  class="input"></textarea>
-                    <label for="">Message</label>
-                    <span>Message</span>
-                </div>
-                <button type="submit" class="button btn"><i class="uil uil-navigator button-icon"></i>
-                    Send <span>Message</span>
-                </button>
-            </form>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <div class="main-text">
+            <h2>Contact <span>Me</span></h2>
         </div>
-    </div>
-</section>
+
+
+        <div class="contact-container grid">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="uil uil-envelope contact-card-icon"></i>
+                        <h3 class="contact-card-title">Email</h3>
+                        <span class="contact-card-data"><a href="mailto:gaston52343@gmail.com"><span>gaston52343@gmail.com</span></a></span>
+                        <span class="contact-button">
+                            Write me <i class="uil uil-arrow-right contact-button-icon"></i>
+                        </span>
+                    </div>
+                    <div class="contact-card">
+                        <i class="uil uil-whatsapp contact-card-icon"></i>
+                        <h3 class="contact-card-title">Whatsapp</h3>
+                        <span class="contact-card-data"> <a href="https://wa.me/543512041336" target="_blank"><span>+543512041336</span></a></span>
+                        <span class="contact-button">
+                            Write me <i class="uil uil-arrow-right contact-button-icon"></i>
+                        </span>
+                    </div>
+                    <div class="contact-card">
+                        <i class="uil uil-facebook-messenger-alt contact-button-icon"></i>
+                        <h3 class="contact-card-title">Messenger</h3>
+                        <span class="contact-card-data">gaston52343@gmail.com</span>
+                        <span class="contact-button">
+                            Write me <i class="uil uil-arrow-right contact-button-icon"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-content">
+                <form action="" class="contact-form">
+                    <div class="input-container">
+                        <input type="text" class="input">
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" class="input">
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" class="input">
+                        <label for="">Phone</label>
+                        <span>phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="" id="" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <button type="submit" class="button btn"><i class="uil uil-navigator button-icon"></i>
+                        Send <span>Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
 </body>
 
