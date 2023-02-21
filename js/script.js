@@ -24,6 +24,7 @@ inputs.forEach((input) =>{
         link.target.classList.toggle('active');
     }
 })*/
+/*Active scroll script*/ 
 const navLi = document.querySelectorAll('nav ul li a');
 const sections = document.querySelectorAll('section');
 

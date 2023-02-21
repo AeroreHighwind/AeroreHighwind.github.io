@@ -79,10 +79,12 @@ span{
     display: flex;
 }
 .navBar a{
+    display: block;
     color: var(--second-color);
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 500;
     margin: 0 25px;
+    text-align: center;
     transition: all .45s ease;
 }
 
@@ -551,6 +553,7 @@ textarea.input{
 
 
 
+
 @media(max-width:1100px){
     :root{
         --big-font:4rem;
@@ -565,17 +568,30 @@ textarea.input{
         height: 87vh;
     }
 }
-@media(max-width:920){
+@media(max-width:920px){
     .about{
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
     .about-img img{
-        width: 100%;
+        width: 50%;
+        max-width: 50%;
         height: auto;
-        max-width: 100%;
     }
 }
+@media(max-width:710px){
+    .about{
+        display: flex;
+        flex-direction: column;
 
+    }
+    .about-img img{
+        width: 45%;
+        height: auto;
+        max-width: 45%;
+
+    }
+}
 @media(max-width:480px){
     #menu-icon{
         display: block;
@@ -606,5 +622,17 @@ textarea.input{
     }
     .navBar.open{
         top: 100%;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .about-img img{
+        width: 45%;
+        height: auto;
+        max-width: 45%;
+
     }
 }
