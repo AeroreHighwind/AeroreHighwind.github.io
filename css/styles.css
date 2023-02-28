@@ -24,6 +24,7 @@ p{
 :root{
     --bg-color: #0a0a0f;
     --second-bg-color:#16161d;
+    --card-color: #171717;
     --text-color:#fff;
     --second-color:#ccc;
     --main-color:#0569ff;
@@ -345,59 +346,86 @@ section{
 
 /*Skills section*/
 
-.skills-container{
-    display: grid;
-    grid-template-columns: 360px 320px;
-    column-gap: 3rem;
-    justify-content: center;
-}
-
-
-.skills-titles{
+#cards {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-}
-
-.skills-header{
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;  
+    max-width: 916px;
+    width: calc(100% - 20px);
+  }
+  
+  #cards:hover > .card::after {
+    opacity: 1;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     cursor: pointer;
+    display: flex;
+    height: 260px;
+    flex-direction: column;
+    position: relative;
+    width: 300px;  
+  }
+.card-image {
+  align-items: center;
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  overflow: hidden;
 }
-
-.skills-header:not(:last-child){
-    margin-bottom: 2.5rem;
-}
-.skills-icon,
-.skills-arrow{
-    font-size: 1.8rem;
-    color: var(--main-color);
-}
-.skills-icon{
-    margin-right:0.75rem;
-}
-.skills-arrow{
-    margin-left:auto;
-}
-
-.skills-list{
-    row-gap: 1.8rem;
-}
-
-.skills-bar,
-.skills-percentage{
-    height: 5px;
-    border-radius: .25rem;
-}
-.skills-bar{
-    background-color: var(--second-bg-color);
-}
-
-.skills-percentage{
-    display: block;
-    background-color: var(--main-color);
-    line-height: 0.4;
-}
+.card-image img{
+    height: 120px;
+    overflow: hidden;
+  }
+  
+  .card:hover::before {
+    opacity: 1;
+  }
+  
+  .card::before,
+  .card::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+  }
+  
+  .card::before {
+    background: radial-gradient(
+      800px circle at var(--mouse-x) var(--mouse-y), 
+      rgba(255, 255, 255, 0.06),
+      transparent 40%
+    );
+    z-index: 3;
+  }
+  
+  .card::after {  
+    background: radial-gradient(
+      600px circle at var(--mouse-x) var(--mouse-y), 
+      rgba(255, 255, 255, 0.4),
+      transparent 40%
+    );
+    z-index: 1;
+  }
+  
+  .card > .card-content {
+    background-color: var(--card-color);
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    inset: 1px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+  }
 
 /*Contact*/
 .contact-container{
