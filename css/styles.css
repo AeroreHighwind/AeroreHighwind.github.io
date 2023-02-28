@@ -431,11 +431,18 @@ section{
     z-index: 2;
   }
   .card-info-wrapper {
+    font-size: .9rem;
+    text-align: center;
     align-items: center;
     display: flex;
     flex-grow: 1;
     justify-content: flex-start;
     padding: 0px 20px;
+  }
+  .card-info-title > h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 20px;
   }
   .card > a{
     position: relative;
