@@ -21,7 +21,9 @@ p{
 .flex{
     display: flex;
 }
-
+.hidden{
+display: none;
+}
 :root{
     --bg-color: #0a0a0f;
     --second-bg-color:#16161d;
@@ -232,6 +234,7 @@ section{
     line-height: 1.8;
     margin-bottom: 4rem;
 }
+/*Projects section*/
 .projects-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px,auto));
