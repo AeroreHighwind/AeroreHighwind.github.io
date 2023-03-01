@@ -100,6 +100,7 @@ color: var(--main-color);
     display: flex;
 }
 
+
 #menu-icon{
     font-size: 35px;
     color: var(--text-color);
@@ -189,13 +190,17 @@ section{
 .btn:hover{transform: scale(0.9);}
 
 .media-btn{
-    display:inline-block;
+    font-size: 1.2rem;
+    display:block;
     padding: 10px;
-    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
     margin-top: 50px;
     color: var(--second-color);
     background: var(--main-color);
-    border-radius: 10%;
+    border-radius: 100%;
+    text-align: center;
 }
 .about{
     display: grid;
@@ -640,6 +645,13 @@ textarea.input{
         width: 50%;
         max-width: 50%;
         height: auto;
+    }
+    .academic-content-grid{
+        grid-template-columns: repeat(2,200px);
+        column-gap: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
 @media(max-width:710px){
