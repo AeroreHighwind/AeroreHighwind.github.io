@@ -61,7 +61,7 @@ const navBar = document.querySelector('.navBar');
 
 menuBtn.addEventListener('click', () =>{
     if(navBar.style.display == 'none'){
-        navBar.style.display = 'block';
+        navBar.style.display = 'flex';
     }
     else{
         navBar.style.display='none';
