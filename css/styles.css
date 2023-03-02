@@ -629,6 +629,21 @@ textarea.input{
         height: 87vh;
     }
 
+      .projects-content h5{
+        font-size: 1rem;
+    }
+    .projects-content p{
+        font-size: .75rem;
+        font-weight: 900;
+    }
+
+    .layer i{
+        margin-top: 4px;
+        font-size: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
     #cards {    
         max-width: 1000px;
         padding: 10px 0px;
@@ -638,6 +653,8 @@ textarea.input{
         flex-shrink: 1;
         width: calc(50% - 4px);
       }
+
+      
 }
 @media(max-width:920px){
     .about{
