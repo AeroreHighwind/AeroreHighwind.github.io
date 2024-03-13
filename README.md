@@ -1,4 +1,4 @@
-![Header](./src/assets/img/github-header-image.png)
+![Header](./img/github-header-image.png)
 
 
 I have been learning to code since 2019, from C# in Unity Engine to Typescript in Angular, where i remain developing my skills. I'm also interested in back-end development and i see it as a way to remain independent on individual projects,so i started to learn NestJS. Dot NET picked my interest too, so why don't give it a shot?
